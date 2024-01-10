@@ -6,3 +6,10 @@ header h1 {
   font-family: "Shrikhand", cursive;
   text-align: center;
 }
+
+img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
