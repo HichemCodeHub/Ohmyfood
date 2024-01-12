@@ -1,0 +1,15 @@
+
+.reservation__btn {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: ($color-secondary);
+    color: ($white);
+    border-radius: 25px;
+    border: transparent;
+    font-weight: map-get($font-weight, medium);
+    @include shadow-button;
+    @include gradient;
+
+}
+
+

@@ -1,0 +1,50 @@
+
+
+
+
+// Titre d'en tête //
+
+@mixin title__heading {
+    font-size: 24px;
+    font-weight: map-get($font-weight,bold );
+
+}
+
+// shadow top //
+@mixin box-shadow {
+    box-shadow: inset 0 10px 8px -5px $shadow;
+}
+// shadow button //
+@mixin shadow-button {
+    box-shadow: 0px 10px 10px $shadow;
+}
+
+// gradient button //
+
+@mixin gradient ($oriantation: $degree) {
+    background:linear-gradient( $degree, $color-primary, $color-secondary);
+}
+
+@mixin circle {
+    border-radius: 50%;
+}
+
+@mixin posicone {
+    padding: 15px;
+    width: 15px;
+    height: 23px;
+}
+
+@mixin subtitle {
+    size: 16px;
+    font-weight: map-get($font-weight,medium);
+}
+
+
+
+
+
+
+
+
+

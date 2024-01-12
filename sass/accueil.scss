@@ -1,20 +1,208 @@
 @import "global.scss";
 @import "variables.scss";
 @import "mixins.scss";
+@import "header";
+@import "button";
+@import "body";
+@import "footer";
+@import "header";
 
 
+.recherche {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $grey;
+    padding: 10px 0;
+    gap: 17px;
+    @include box-shadow;
+  
+    & i {
+      color: $black;
+      padding-left: 80px;
+    }
+  
+    &__inputchamp {
+      border: none;
+      background-color: $grey;
+      font-weight: map-get($font-weight, medium);
+      font-size: 18px;
 
-// .header__logo {
-//     font-family: "Shrikhand",cursive ;
-//     text-align: center;
-// }
+  
+      &:focus {
+        display: none;
+      }
+    }
+  }
 
-header {
-    h1{
-        font-family: "Shrikhand",cursive ;
-             text-align: center; 
+.reservation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 20px 0;
+    background-color: ($LightGray);
+    text-align: center;
+
+    &__title {
+        width: 65%;
+        margin: 10px 0;
+        @include title__heading;
+    }
+
+
+    &  p {
+        width: 85%;
+        margin: 0;
+        font-size: 18px;
+        font-weight:map-get($font-weight, light);
     }
 }
+
+.fonctionnement {
+    margin-left: 12px;
+
+    &__title {
+        @include title__heading;
+
+    }
+
+    &__step {
+        display: flex;
+        gap: 10px;
+        border: 1px solid $LightGray;
+        background-color: $LightGray;
+        margin: 15px;
+        border-radius: 20px;
+
+    }
+
+    &__step--subtitle {
+        @include subtitle;
+
+    }
+
+    &__step--number {
+        border: 1px solid;
+        margin-left: -15px;
+        padding: 2px 6px;
+        background-color: $color-primary;
+        color: $white;
+        @include circle;
+    }
+
+    &__step--icon {
+        color: $icon; 
+        @include posicone;  
+    }
+
+    &__step--iconstand {
+        color: $color-primary;
+        @include posicone;  
+    } 
+
+}
+
+.restaurant {
+    background-color: $LightGray;
+
+    &__title {
+        @include title__heading;
+        padding: 50px 0 0 12px;
+    }
+
+}
+
+.restaurant__cards {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 251px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    background-color: $white;
+    width: 95%;
+    padding-left: 12px;
+ 
+    &--img {
+        position: relative;
+        overflow: hidden;
+        height: 175px;
+        border-radius: 15px 15px 0px 0px;
+
+        & img {
+            width: 100%;
+            height: 175px;
+            object-fit: cover;
+        }
+
+        &--markerinfo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            right: 15px;
+            top: 12px;
+            width: 80px;
+            height: 30px;
+            border-radius: 2px;
+            background-color: $color-tertiary;
+            color: darken($color-tertiary, 40%);
+            font-weight: map-get($font-weight, medium);
+        }
+    }
+
+    &--info {
+        display: flex;
+        align-items: flex-start;
+        min-height: 75px;
+        padding: 15px;
+        background-color: $white;
+        
+
+        &--text {
+            width: 90%;
+        }
+
+        & h4, p {
+            margin: 0;
+            text-decoration: none;
+        }
+
+        & a {
+            text-decoration: none;
+        }
+        
+        & h4 {
+            width: 267px;
+            height: 20px;
+            margin-bottom: 5px;
+            font-size: 18px;
+            
+        }
+
+        & p {
+            height: 24px;
+            font-weight: 300;
+            font-size: 17px;
+        }
+    }
+
+    &--like {
+        position: absolute;
+        top: 76%;
+        right: 7%;
+        font-size: 25px;
+    }
+}
+
+
+
+
+
+
+
 
 
 

@@ -1,7 +1,127 @@
-footer {
-  background-color: 0;
+* {
+  font-family: "Roboto", sans-serif;
 }
 
-h1 {
-  color: 255;
+/**** font weight ****/
+/**** color ****/
+/**** Degree Gradient ****/
+.header {
+  padding: 1%;
+  margin: -15px;
+}
+.header__logo {
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+}
+
+.reservation__btn {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #FF79DA;
+  color: #ffffff;
+  border-radius: 25px;
+  border: transparent;
+  font-weight: 500;
+  box-shadow: 0px 10px 10px #d5d5d5;
+  background: linear-gradient(357deg, #9356DC, #FF79DA);
+}
+
+.body {
+  width: 100%;
+  margin: auto;
+}
+
+.header {
+  padding: 1%;
+  margin: -15px;
+}
+.header__logo {
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+}
+
+.recherche {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EAEAEA;
+  padding: 10px 0;
+  gap: 17px;
+  box-shadow: inset 0 10px 8px -5px #d5d5d5;
+}
+.recherche i {
+  color: #353535;
+  padding-left: 80px;
+}
+.recherche__inputchamp {
+  border: none;
+  background-color: #EAEAEA;
+  font-weight: 500;
+  font-size: 18px;
+}
+.recherche__inputchamp:focus {
+  display: none;
+}
+
+.reservation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 20px 0;
+  background-color: #F6F6F6;
+  text-align: center;
+}
+.reservation__title {
+  width: 65%;
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+.reservation p {
+  width: 85%;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.fonctionnement {
+  margin-left: 12px;
+}
+.fonctionnement__title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.fonctionnement__step {
+  display: flex;
+  gap: 10px;
+  border: 1px solid #F6F6F6;
+  background-color: #F6F6F6;
+  margin: 15px;
+  border-radius: 20px;
+}
+.fonctionnement__step--subtitle {
+  size: 16px;
+  font-weight: 500;
+}
+.fonctionnement__step--number {
+  border: 1px solid;
+  margin-left: -15px;
+  padding: 2px 6px;
+  background-color: #9356DC;
+  color: #ffffff;
+  border-radius: 50%;
+}
+.fonctionnement__step--icon {
+  color: #7E7E7E;
+  padding: 15px;
+  width: 15px;
+  height: 23px;
+}
+.fonctionnement__step--iconstand {
+  color: #9356DC;
+  padding: 15px;
+  width: 15px;
+  height: 23px;
 }

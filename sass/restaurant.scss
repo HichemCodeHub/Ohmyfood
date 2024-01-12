@@ -1,8 +1,105 @@
 @import "global.scss";
 @import "variables.scss";
 @import "mixins.scss";
+@import "header";
+@import "button";
+@import "body";
+@import "footer";
+@import "header";
 
 
-h1 {
-    color: red($color: #ffffff);
+.recherche {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $grey;
+    padding: 10px 0;
+    gap: 17px;
+    @include box-shadow;
+  
+    & i {
+      color: $black;
+      padding-left: 80px;
+    }
+  
+    &__inputchamp {
+      border: none;
+      background-color: $grey;
+      font-weight: map-get($font-weight, medium);
+      font-size: 18px;
+
+  
+      &:focus {
+        display: none;
+      }
+    }
+  }
+
+.reservation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 20px 0;
+    background-color: ($LightGray);
+    text-align: center;
+
+    &__title {
+        width: 65%;
+        margin: 10px 0;
+        @include title__heading;
+    }
+
+
+    &  p {
+        width: 85%;
+        margin: 0;
+        font-size: 18px;
+        font-weight:map-get($font-weight, light);
+    }
+}
+
+.fonctionnement {
+    margin-left: 12px;
+
+    &__title {
+        @include title__heading;
+
+    }
+
+    &__step {
+        display: flex;
+        gap: 10px;
+        border: 1px solid $LightGray;
+        background-color: $LightGray;
+        margin: 15px;
+        border-radius: 20px;
+
+    }
+
+    &__step--subtitle {
+        @include subtitle;
+
+    }
+
+    &__step--number {
+        border: 1px solid;
+        margin-left: -15px;
+        padding: 2px 6px;
+        background-color: $color-primary;
+        color: $white;
+        @include circle;
+    }
+
+    &__step--icon {
+        color: $icon; 
+        @include posicone;  
+    }
+
+    &__step--iconstand {
+        color: $color-primary;
+        @include posicone;  
+    } 
+
 }
