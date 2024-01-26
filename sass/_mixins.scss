@@ -1,5 +1,10 @@
-
-
+// Logo //
+@mixin footer__logo {
+    margin: 0 0 16px 0;
+    font-family: "Shrikhand",cursive;
+    font-weight: 300;
+    font-size: medium;
+}
 
 
 // Titre d'en tête //
@@ -38,6 +43,20 @@
 @mixin subtitle {
     size: 16px;
     font-weight: map-get($font-weight,medium);
+}
+
+/**** Responsive ****/
+
+@mixin table__responsive {
+    @media all and (min-width: map-get($breakpoints, table)) {
+        @content;
+    }
+}
+
+@mixin desktop__responsive {
+    @media all and (min-width: map-get($breakpoints, desktop)) {
+        @content
+    }
 }
 
 

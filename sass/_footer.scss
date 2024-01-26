@@ -1,0 +1,43 @@
+.footer {
+    width: 100%;
+    padding: 22px 25px;
+    background-color: darken($white, 75%);
+    color: $white;
+
+    & p {
+        margin: 5px 0;
+        color: $white;
+    }
+
+    &__logo {
+        @include footer__logo;
+
+    }
+
+    &__bloc {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        font-weight: map-get($font-weight, medium);
+        gap: 7px;
+        text-decoration: none;
+
+        &--info {
+            text-decoration: none;
+        }
+
+        &--icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 16px;
+            height: 13px;
+            font-size: 13px;
+            color: $white;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@import "global.scss";
+@import "variables.scss";
+@import "mixins.scss";
+
+.loader {
+    position: fixed;
+    display: grid;
+    place-items: center;
+    background-color: $white;
+    height: 100vh;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.9;
+    animation: disappear 200ms forwards;
+    animation-delay: 2s;
+    transform-origin: top;
+
+    & i {
+        animation: spin 2s infinite ease;
+    }
+}
+
+@keyframes disappear {
+    to {
+        transform: scale(0);
+    }
+
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
