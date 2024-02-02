@@ -31,6 +31,31 @@
   -webkit-text-stroke: 1px rgb(255, 255, 255);
   cursor: pointer;
 }
+@keyframes heart-fill {
+  0% {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  15% {
+    opacity: 0.25;
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  85% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  95% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 .button__like:hover::after {
   z-index: 1;
   animation: heart-fill 900ms forwards cubic-bezier(0.65, 1.01, 0.98, 1.06);
@@ -59,7 +84,6 @@
 }
 
 .footer {
-  width: 100%;
   padding: 22px 25px;
   background-color: #404040;
   color: #ffffff;
@@ -141,6 +165,31 @@
 @keyframes spin {
   to {
     transform: rotate(360deg);
+  }
+}
+@keyframes heart-fill {
+  0% {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  15% {
+    opacity: 0.25;
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  85% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  95% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 .recherche {
@@ -257,6 +306,7 @@
 }
 
 .restaurant {
+  overflow: hidden; /* ou auto, scroll, etc. selon vos besoins */
   background-color: #F6F6F6;
 }
 .restaurant__title {
@@ -264,17 +314,33 @@
   font-weight: 700;
   padding: 50px 0 0 12px;
 }
+.restaurant__bloc {
+  width: 90%;
+}
+@media all and (min-width: 1024px) {
+  .restaurant__bloc {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 12%;
+  }
+}
 
 .restaurant__cards {
   display: flex;
   flex-direction: column;
   position: relative;
   height: 250px;
-  margin-bottom: 40px;
   border-radius: 15px;
   background-color: #ffffff;
   width: 90%;
   margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+@media all and (min-width: 1024px) {
+  .restaurant__cards {
+    width: 67%;
+  }
 }
 .restaurant__cards a {
   text-decoration: none;

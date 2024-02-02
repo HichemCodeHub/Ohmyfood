@@ -6,6 +6,8 @@
 @import "footer";
 @import "header";
 @import "loading";
+@import "animations.scss";
+
 
 
 .recherche {
@@ -130,11 +132,21 @@
 }
 
 .restaurant {
+    overflow: hidden; /* ou auto, scroll, etc. selon vos besoins */
     background-color: $LightGray;
 
     &__title {
         @include title__heading;
         padding: 50px 0 0 12px;
+    }
+
+    &__bloc {
+        width: 90%;
+        @include desktop__responsive {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); // Deux colonnes égales
+            margin-left: 12%;
+        }
     }
 
 }
@@ -144,11 +156,18 @@
     flex-direction: column;
     position: relative;
     height: 250px;
-    margin-bottom: 40px;
     border-radius: 15px;
     background-color: $white;
     width: 90%;
     margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    @include desktop__responsive {
+        width: 67%;
+
+    }
+    
 
 
     & a { 
