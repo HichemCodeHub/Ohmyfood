@@ -6,6 +6,11 @@
     font-size: medium;
 }
 
+@mixin cursive__logo {
+    font-size: 27px;
+    font-family: "Shrikhand",cursive;
+}
+
 
 // Titre d'en tête //
 

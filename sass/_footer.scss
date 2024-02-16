@@ -3,6 +3,15 @@
     background-color: darken($white, 75%);
     color: $white;
 
+    @include table__responsive {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        height: 114px;
+        gap: 16px;
+    }
+
     & p {
         margin: 5px 0;
         color: $white;
@@ -11,11 +20,26 @@
     &__logo {
         @include footer__logo;
 
+        @include desktop__responsive {
+            width: 137px;
+            margin: 0;
+        }
+        @include table__responsive {
+            width: 137px;
+            margin: 0;
+        }
+
     }
 
     &__bloc {
         display: flex;
         flex-direction: column;
+
+        @include table__responsive {
+            flex-direction: row;
+            align-items: center;
+            gap: 7px;
+        }
     }
 
     &__nav {
@@ -25,8 +49,19 @@
         gap: 7px;
         text-decoration: none;
 
+        @include table__responsive {
+            width: 190px;
+        }
+
         &--info {
             text-decoration: none;
+
+            @include table__responsive {
+                & p {
+                    width: 130px;
+                    height: 20px;
+                }
+            }
         }
 
         &--icons {

@@ -7,7 +7,7 @@
     border-radius: 25px;
     border: transparent;
     font-weight: map-get($font-weight, medium);
-    @include shadow-button;
+    @include object-shadow;
     @include gradient;
 
     &:hover {

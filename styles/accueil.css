@@ -16,7 +16,7 @@
   border-radius: 25px;
   border: transparent;
   font-weight: 500;
-  box-shadow: 0px 10px 10px #d5d5d5;
+  box-shadow: 0 4px 10px 0 #d5d5d5;
   background: linear-gradient(357deg, #9356DC, #FF79DA);
 }
 .reservation__btn:hover {
@@ -73,6 +73,16 @@
   background-color: #404040;
   color: #ffffff;
 }
+@media all and (min-width: 768px) {
+  .footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    height: 114px;
+    gap: 16px;
+  }
+}
 .footer p {
   margin: 5px 0;
   color: #ffffff;
@@ -83,9 +93,28 @@
   font-weight: 300;
   font-size: medium;
 }
+@media all and (min-width: 1024px) {
+  .footer__logo {
+    width: 137px;
+    margin: 0;
+  }
+}
+@media all and (min-width: 768px) {
+  .footer__logo {
+    width: 137px;
+    margin: 0;
+  }
+}
 .footer__bloc {
   display: flex;
   flex-direction: column;
+}
+@media all and (min-width: 768px) {
+  .footer__bloc {
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+  }
 }
 .footer__nav {
   display: flex;
@@ -94,8 +123,19 @@
   gap: 7px;
   text-decoration: none;
 }
+@media all and (min-width: 768px) {
+  .footer__nav {
+    width: 190px;
+  }
+}
 .footer__nav--info {
   text-decoration: none;
+}
+@media all and (min-width: 768px) {
+  .footer__nav--info p {
+    width: 130px;
+    height: 20px;
+  }
 }
 .footer__nav--icons {
   display: flex;
@@ -114,6 +154,28 @@
 .header__logo {
   font-family: "Shrikhand", cursive;
   text-align: center;
+  font-size: 27px;
+  font-family: "Shrikhand", cursive;
+}
+.header__withorrow {
+  position: relative;
+}
+.header__goback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 5%;
+  width: 20px;
+  height: 20px;
+  top: 35%;
+  font-size: 20px;
+  color: #353535;
+}
+@media all and (min-width: 1024px) {
+  .header__goback {
+    font-size: 32px;
+  }
 }
 
 * {

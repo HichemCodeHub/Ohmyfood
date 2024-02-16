@@ -4,7 +4,29 @@
 
     &__logo {
         font-family: "Shrikhand",cursive;
-        text-align: center; 
+        text-align: center;
+        @include cursive__logo; 
+    }
+
+    &__withorrow {
+        position: relative;
+    }
+
+    &__goback {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 5%;
+        width: 20px;
+        height: 20px;
+        top: 35%;
+        font-size: 20px;
+        color: $black;
+
+        @include desktop__responsive {
+            font-size: 32px;
+        }
     }
 
 
