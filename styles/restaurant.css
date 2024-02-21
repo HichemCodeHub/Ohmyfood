@@ -17,10 +17,9 @@
   margin: 0px;
 }
 .header__logo {
-  font-family: "Shrikhand", cursive;
   text-align: center;
-  font-size: 27px;
   font-family: "Shrikhand", cursive;
+  font-weight: 400;
 }
 .header__withorrow {
   position: relative;
@@ -191,10 +190,9 @@
   margin: 0px;
 }
 .header__logo {
-  font-family: "Shrikhand", cursive;
   text-align: center;
-  font-size: 27px;
   font-family: "Shrikhand", cursive;
+  font-weight: 400;
 }
 .header__withorrow {
   position: relative;
@@ -342,7 +340,8 @@
   }
 }
 .slight__heading h2 {
-  width: 87%;
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
 }
 @media all and (min-width: 1024px) {
   .slight__heading h2 {

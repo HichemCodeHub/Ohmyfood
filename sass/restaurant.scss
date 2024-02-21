@@ -57,7 +57,7 @@
         }
 
         & h2 {
-            width: 87%;
+            @include cursive__logo;
 
             @include desktop__responsive {
                 display: flex;
