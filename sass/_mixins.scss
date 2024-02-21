@@ -50,7 +50,6 @@
 }
 
 @mixin subtitle {
-    size: 16px;
     font-weight: map-get($font-weight,medium);
 }
 

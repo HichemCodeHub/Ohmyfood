@@ -18,6 +18,9 @@
     padding: 10px 0;
     gap: 17px;
     @include box-shadow;
+    @include desktop__responsive {
+        box-shadow: none;
+    }
   
     & i {
       color: $black;
@@ -97,7 +100,7 @@
         background-color: $LightGray;
         margin: 15px;
         border-radius: 20px;
-        @include shadow-button;
+        @include object-shadow;
 
         @include desktop__responsive {
             width: 30%;
@@ -138,14 +141,18 @@
     &__title {
         @include title__heading;
         padding: 50px 0 0 12px;
+        @include desktop__responsive {
+            margin-left: 16%;
+        }
     }
 
     &__bloc {
         width: 90%;
+        padding-left: 25px;
         @include desktop__responsive {
+            margin-left: 12%;
             display: grid;
             grid-template-columns: repeat(2, 1fr); // Deux colonnes égales
-            margin-left: 12%;
         }
     }
 

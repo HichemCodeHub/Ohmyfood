@@ -3,6 +3,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /**** font weight ****/
 /**** color ****/
 /**** Degree Gradient ****/
@@ -10,7 +14,7 @@
 /**** Responsive ****/
 .header {
   padding: 1%;
-  margin: -15px;
+  margin: 0px;
 }
 .header__logo {
   font-family: "Shrikhand", cursive;
@@ -40,15 +44,18 @@
 }
 
 .reservation__btn {
-  margin-top: 20px;
-  padding: 15px;
-  background-color: #FF79DA;
+  width: 218px;
+  height: 50px;
   color: #ffffff;
+  font-size: 16px;
+  background: linear-gradient(357deg, #9356DC, #FF79DA);
   border-radius: 25px;
-  border: transparent;
+  border: none;
   font-weight: 500;
   box-shadow: 0 4px 10px 0 #d5d5d5;
-  background: linear-gradient(357deg, #9356DC, #FF79DA);
+  cursor: pointer;
+  margin: 27px 75px 57px 82px;
+  transition: opacity 300ms ease-in-out;
 }
 .reservation__btn:hover {
   opacity: 0.88;
@@ -96,6 +103,7 @@
 
 .body {
   width: 100%;
+  max-width: 100%;
   margin: auto;
 }
 
@@ -180,7 +188,7 @@
 
 .header {
   padding: 1%;
-  margin: -15px;
+  margin: 0px;
 }
 .header__logo {
   font-family: "Shrikhand", cursive;
