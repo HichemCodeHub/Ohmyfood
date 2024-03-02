@@ -43,6 +43,7 @@
         display: flex;
         align-items: center;
         margin: auto;
+        gap: 20px;
 
         @include table__responsive {
             width: 400px;
@@ -201,7 +202,7 @@
         margin-right: -20%;
         border-radius: 0px 15px 15px 0px;
         background-color: $color-tertiary;
-        transition: margin-right 800ms cubic-bezier(.63, 1.23, .96, .92);
+        transition: margin-right 900ms cubic-bezier(.63, 1.23, .96, .92);
 
         &::after {
             display: inline-block;

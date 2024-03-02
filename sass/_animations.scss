@@ -30,7 +30,8 @@
     }
 }
 
-/* CSS pour les éléments d'entrée */
+/* CSS pour les éléments d'entrée les éléments 
+.race-cards qui sont enfants du premier élément .race-list */
 .race-list:nth-child(1) .race-cards {
     animation: appearEntrance 1.5s ease forwards;
     opacity: 0;

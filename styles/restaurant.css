@@ -100,9 +100,8 @@
   transform-origin: bottom;
 }
 
-.body {
+body {
   width: 100%;
-  max-width: 100%;
   margin: auto;
 }
 
@@ -240,7 +239,8 @@
     transform: scale(1);
   }
 }
-/* CSS pour les éléments d'entrée */
+/* CSS pour les éléments d'entrée les éléments 
+.race-cards qui sont enfants du premier élément .race-list */
 .race-list:nth-child(1) .race-cards {
   animation: appearEntrance 1.5s ease forwards;
   opacity: 0;
@@ -324,6 +324,7 @@
   display: flex;
   align-items: center;
   margin: auto;
+  gap: 20px;
 }
 @media all and (min-width: 768px) {
   .slight__heading {
@@ -474,7 +475,7 @@
   margin-right: -20%;
   border-radius: 0px 15px 15px 0px;
   background-color: #99E2D0;
-  transition: margin-right 800ms cubic-bezier(0.63, 1.23, 0.96, 0.92);
+  transition: margin-right 900ms cubic-bezier(0.63, 1.23, 0.96, 0.92);
 }
 .race-cards__checkout::after {
   display: inline-block;
